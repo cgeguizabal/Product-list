@@ -1,0 +1,28 @@
+//My layouts
+
+.App {
+  &__container {
+    max-width: 130rem;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    // min-height: 50rem;
+  }
+}
+
+.LeftContent {
+  &__container {
+    flex: 0 0 70%;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+  }
+}
+
+.RightContent {
+  &__container {
+    flex: 0 0 30%;
+  }
+}
