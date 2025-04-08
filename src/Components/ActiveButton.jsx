@@ -1,9 +1,8 @@
-export function ActiveButton({
-  handleAddProduct,
-  currentProduct,
-  currentNumber,
-  handleDeleteItem,
-}) {
+import { useCartStore } from "../store/cartStore";
+
+export function ActiveButton({ currentProduct, currentNumber }) {
+  const handleAddProduct = useCartStore((state) => state.handleAddProduct);
+  const handleDeleteItem = useCartStore((state) => state.handleDeleteItem);
   return (
     <>
       <div className="button__container">

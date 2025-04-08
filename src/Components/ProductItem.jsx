@@ -3,7 +3,7 @@ import { useCartStore } from "../store/cartStore";
 
 export function ProductItem({ products }) {
   const cart = useCartStore((state) => state.cart);
-  const handleDeleteItem = useCartStore((state) => state.handleDeleteItem);
+
   const handleAddProduct = useCartStore((state) => state.handleAddProduct);
 
   const currentNumber =
@@ -45,8 +45,6 @@ export function ProductItem({ products }) {
             <ActiveButton
               currentProduct={currentProduct}
               currentNumber={currentNumber}
-              handleAddProduct={handleAddProduct}
-              handleDeleteItem={handleDeleteItem}
             />{" "}
           </>
         )}
