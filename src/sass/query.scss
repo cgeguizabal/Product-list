@@ -1,0 +1,41 @@
+@media (max-width: 52em) {
+  .App {
+    &__container {
+      justify-content: center;
+    }
+  }
+
+  .LeftContent {
+    &__container {
+      width: 100vw;
+      padding: 0 2rem;
+      flex: 0 0 100%;
+    }
+  }
+
+  .desserts {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .product__image-container {
+    overflow: hidden;
+    width: 30rem;
+    height: 20rem;
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  .product__container {
+    width: 30rem;
+  }
+
+  .desserts {
+    justify-items: center;
+  }
+}

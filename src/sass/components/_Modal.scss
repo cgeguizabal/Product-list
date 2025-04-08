@@ -1,0 +1,143 @@
+.modal {
+  &__wrapper {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+  }
+
+  &__container {
+    background-color: $color-rose-50;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    width: 50rem;
+  }
+
+  &__item {
+    &-container {
+      background-color: $color-rose-100;
+
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+  }
+
+  &__title {
+    color: $color-rose-900;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    color: $color-rose-500;
+    font-size: 1.4rem;
+    font-weight: $font-weight-1;
+    margin-bottom: 2rem;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    &-order {
+      color: $color-rose-500;
+      font-weight: $font-weight-2;
+      font-size: 1.2rem;
+    }
+    &-price {
+      font-weight: $font-weight-3;
+      color: $color-rose-900;
+      font-size: 2rem;
+    }
+  }
+
+  &__button {
+    background-color: $color-red-orange;
+    border: none;
+    border-radius: 5rem;
+    color: $color-rose-50;
+    padding: 1rem 5rem;
+    width: 50rem;
+
+    &:hover {
+      background-color: darken($color-red-orange, 10%);
+      cursor: pointer;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.modalItem {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__data {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__image {
+    width: 4.5rem;
+
+    &-1 {
+      max-width: 4.5rem;
+
+      object-fit: cover;
+      border-radius: 0.5rem;
+      display: block;
+    }
+  }
+
+  &__title {
+    color: $color-rose-900;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  &__quantity {
+    color: $color-red-orange;
+    font-size: 1.2rem;
+    font-weight: $font-weight-2;
+  }
+
+  &__subprice {
+    font: 1.3rem;
+    color: $color-rose-400;
+    font-weight: $font-weight-2;
+  }
+
+  &__total {
+    font-size: 1.4rem;
+    font-weight: $font-weight-2;
+  }
+
+  &__line {
+    border: none;
+    height: 0.7px;
+    background-color: hsla(14, 24%, 72%, 0.377);
+    margin: 2rem 0;
+  }
+}
