@@ -1,41 +1,120 @@
-@media (max-width: 52em) {
+@media (max-width: 76em) {
+  .App {
+    &__container {
+      padding: 3rem;
+    }
+  }
+
+  .product {
+    &__container {
+      width: 80%;
+    }
+
+    &__button {
+      font-size: 1.4rem;
+    }
+  }
+
+  .LeftContent {
+    &__title {
+      margin-left: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 52.4em) {
   .App {
     &__container {
       justify-content: center;
     }
   }
-
   .LeftContent {
     &__container {
-      width: 100vw;
-      padding: 0 2rem;
+      flex: 0 0 100%;
+    }
+    &__title {
+      margin-left: 4rem;
+    }
+  }
+
+  .RightContent {
+    &__container {
       flex: 0 0 100%;
     }
   }
 
   .desserts {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    gap: 1rem;
   }
+  .product {
+    &__container {
+      width: 80%;
+    }
+  }
+  .box {
+    &__container {
+      margin-top: 3rem;
+    }
+  }
+}
 
-  .product__image-container {
-    overflow: hidden;
-    width: 30rem;
-    height: 20rem;
-
-    &-image {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 1rem;
+@media (max-width: 65.1em) {
+  .LeftContent {
+    &__container {
+      flex: 0 0 100%;
+    }
+    &__title {
+      margin-left: 4rem;
     }
   }
 
-  .product__container {
-    width: 30rem;
+  .RightContent {
+    &__container {
+      flex: 0 0 100%;
+    }
   }
 
-  .desserts {
-    justify-items: center;
+  .box {
+    &__container {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width: 36.2em) {
+  .product {
+    &__container {
+      width: 100%;
+    }
+    &__image-container {
+      overflow: hidden;
+      width: 100%;
+      height: 20rem;
+      &--selected {
+        height: 20rem;
+
+        border-radius: 1rem;
+        border: 2px solid $color-red-orange;
+      }
+
+      &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .LeftContent {
+    &__title {
+      margin-left: 0;
+    }
+  }
+
+  .modal {
+    &__container {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
   }
 }

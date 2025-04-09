@@ -1,7 +1,9 @@
 import { ActiveButton } from "./ActiveButton";
 import { useCartStore } from "../store/cartStore";
+import { useEffect, useState } from "react";
 
 export function ProductItem({ products }) {
+  const [width, setWidth] = useState(window.innerWidth);
   const cart = useCartStore((state) => state.cart);
 
   const handleAddProduct = useCartStore((state) => state.handleAddProduct);
@@ -12,17 +14,25 @@ export function ProductItem({ products }) {
   const currentProduct =
     cart.find((item) => item.id === products.id) || products;
 
+  useEffect(() => {
+    const handleWidth = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleWidth);
+  }, []);
+
   return (
     <div className="product__container">
       <div className="product__image">
-        <figure className="product__image-container">
+        <figure
+          className={
+            currentNumber === 0
+              ? "product__image-container"
+              : "product__image-container--selected"
+          }
+        >
           <img
-            className={
-              currentNumber === 0
-                ? "product__image-container-image"
-                : "product__image-container-image--selected"
-            }
-            src={products.image.desktop}
+            className="product__image-container-image"
+            src={width > 576 ? products.image.desktop : products.image.mobile}
             alt="Product-Image"
           />
         </figure>
