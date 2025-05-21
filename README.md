@@ -1,12 +1,28 @@
-# React + Vite
+# Product List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive product listing interface built with **React**, **Sass**, and **Zustand** for global state management. The layout is structured using a custom **11-column CSS grid**.
 
-Currently, two official plugins are available:
+# Preview
+https://stirring-jalebi-91b956.netlify.app/
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ⚛️ Built with **React**
+- 🪢 **Zustand** used for global state management
+- 💾 **Data persistence via localStorage**
+- 🎨 Styled using **Sass (SCSS)**
+- 📐 Responsive design with an **11-column grid system**
+- 🧾 Clean component structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+| Tech        | Description                               |
+|-------------|-------------------------------------------|
+| React       | UI library for building components        |
+| Zustand     | Lightweight global state manager          |
+| Sass (SCSS) | CSS preprocessor with nesting & variables |
+| Vite        | Fast development server and bundler       |
+
+
+
